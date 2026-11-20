@@ -28,7 +28,7 @@ This lab practises these topics: let, const and ===; Functions as values, arrow 
 
 ## Setup
 
-1. Open a terminal in this folder: the repository root you cloned, the folder that holds this README. These instructions call it `coding-lab/`.
+1. Open a terminal in this folder, `coding-lab/`, the folder that holds this README.
 2. Run the starter program once to see where you start:
 
    ```sh

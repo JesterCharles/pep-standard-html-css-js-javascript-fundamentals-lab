@@ -1,0 +1,13 @@
+# Exa grading manifest for this lab: best-effort first version, not yet
+# verified inside Exa Studio. It follows the observed Exa schema (everything
+# under 'test:') and is meant to drive both local Run Tests and grading.
+#
+# ASSUMPTION: no 'image' is declared, so Exa's documented fallback to the
+# project's pinned runtime pack applies. The imported Exa Node template must supply Node.js 22 or later (the lab's own command is 'node --test --test-reporter=spec'; the junit reporter is added for the report file).
+#
+# The lab's own declared test command is: node --test --test-reporter=spec (run from '.' inside the lab).
+# The command below runs from the repository root (ASSUMPTION: through a shell)
+# and adds a JUnit report file.
+test:
+  command: "node --test --test-reporter=spec --test-reporter-destination=stdout --test-reporter=junit --test-reporter-destination=reports/junit.xml"
+  reports: "reports/junit.xml"
